@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo { width: 80px; }
+
+.starbucks {
+    width: 280px;
+}
+
+.botao-menu {
+    width: 70px;
+    margin: 10px;
+    transition: 1s ;
+    cursor: pointer;
+}
+
+.botao-menu:hover {
+    transform: translateY(-25px);
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #333;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span{
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+    z-index: 1;
+}
+
+p{ font-size: 16px;}
+
+button {
+    background: #017143;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+}
+button:hover{
+    opacity: 0.9;
+}
+button:active{
+    opacity: 0.5;
+    border:solid 1px #289266;
+    transition: 0.3s ease-out;
+}
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #bf48ad;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+@media  (max-width:768px) { 
+
+    span{
+        color: #289266;
+        font-size: 70px;
+        font-weight: 900;
+        z-index: 1;
+    }
+}
+
+@media  (max-width:728px) { 
+
+    body {
+        padding-top: 20px;
+        margin-inline: 10%;
+        padding-right: 0px;
+        padding-left: 0px;    }
+    span{
+        color: #289266;
+        font-size: 43px;
+    }
+    h2 {
+    font-size: 30px;
+}
+
+p{
+    margin-top: 4rem;
+}
+
+.logo {
+    width: 50px;
+}
+
+    .conteudo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .starbucks {
+        width: 100px;
+    }
+    
+    .circulo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #bf48ad;
+        top: 0;
+        left: 0;
+        clip-path: circle(600px at right 800px);
+        z-index: -1;
+}
+.caixa-imagem {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
+}
+.caixa-texto {
+    width: 600px;
+}
+
+.menu {
+    margin-top: 1rem;
+}
+}
